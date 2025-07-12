@@ -1,6 +1,8 @@
 # Howler Custom Audio Player
 このプログラムは「Howler.js」のサンプルをカスタマイズしたWeb上で動くオーディオプレーヤーです。  
 
+## デモ
+[Howler Custom Audio Player](https://lunaris-f.github.io/Howler-Custom-Audio-Player/)
 
 ## 簡単な使い方
 Howler Custom Audio Playerをダウンロードし、「audio」フォルダの中身を再生したい音楽に変更します。(audioの中身を削除し、好きな音楽ファイルを設置)  
@@ -91,7 +93,10 @@ var myMusicList = [
 「このアプリのURL/?mode=random&index=0&per=1.0」のように「&」で複数のパラメーターを設定できます。  
 
 モードを「random」に設定すると最初に再生される曲がランダムになりますが、「index」を指定することで最初に再生される曲をコントロールできます。  
-「このアプリのURL/?mode=random&index=0」のように、使用しないパラメーターは定義しなくて良いです。
+「このアプリのURL/?mode=random&index=0」のように、使用しないパラメーターは定義しなくて良いです。  
+  
+・例  
+[ランダム再生、2曲目を再生](https://lunaris-f.github.io/Howler-Custom-Audio-Player/?mode=random&index=1)
 
 ## ライセンス
 MITライセンス  
