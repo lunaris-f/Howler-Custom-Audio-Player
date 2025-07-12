@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="user-scalable=no">
+  <title>Howler Custom Audio Player</title>
+  <link rel="stylesheet" href="./common/css/player.css">
+</head>
+<body>
+<div class="playerWrap">
+  <div class="playerLeft" id="playerLeft">
+
+    <!-- タイトル -->
+    <div id="titleArea">
+      <div class="menuWrap">
+        <div class="menu_inner">
+          <a href="#" onclick="window.history.back(); return false;" class="menuBtn playerBtn text-decoration-none text-dark">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+              <path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="timeLine"><span id="timer">0:00</span> / <span id="duration">0:00</span></div>
+      <div class="trackArea"><h1 id="track"></h1></div>
+    </div>
+
+    <div class="controlsOuter">
+      <!-- シークバー -->
+      <div id="progressWrap">
+        <div id="progressBar">
+          <div id="progress"></div>
+          <div id="seekBtn"></div>
+        </div>
+      </div><!-- /#progressWrap -->
+      
+       <!-- コントローラー -->
+      <div class="controlsInner">
+        <div id="loading"></div>
+        <div class="playerBtn" id="playBtn"></div>
+        <div class="playerBtn" id="pauseBtn"></div>
+        <div class="playerBtn" id="prevBtn"></div>
+        <div class="playerBtn" id="nextBtn"></div>
+      </div><!-- /.controlsInner -->
+      <div class="playerBtn" id="volumeBtn"></div>
+      <div class="playerBtn" id="playOrderBtn"></div>
+    </div>
+
+    <!-- 波形アニメーション -->
+    <div id="waveArea">
+      <div id="waveUp"></div>
+      <div id="waveDown"></div>
+    </div><!-- /#waveArea -->
+    <div id="bar"></div>
+
+  </div><!-- /.playerLeft -->
+
+  <!-- プレイリスト -->
+  <div class="playerRight">
+    <h3 id="playListTitle">-Play List</h3>
+    <ul id="playLists" class="playList">
+    </ul><!-- /.playList -->
+  </div><!-- /.playerRight-->
+
+  <!-- ボリューム -->
+  <div id="volume" class="fadeout">
+    <div id="volumeNum">100</div>
+    <div id="barFull" class="bar"></div>
+    <div id="barEmpty" class="bar"></div>
+    <div id="sliderBtn"></div>
+  </div><!-- /#volume -->
+
+</div><!-- /.playerWrap -->
+
+  <!-- Scripts -->
+  <script src="./common/js/howler.core.js"></script>
+  <script src="./common/js/player.js"></script>
+</body>
+</html>
