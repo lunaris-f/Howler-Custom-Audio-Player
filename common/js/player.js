@@ -356,6 +356,9 @@ var player = new Player(musicData);
 setVolume( songPer );
 
 playBtn.addEventListener('click', function() {
+  if (Howler.ctx.state === 'suspended') {
+    Howler.ctx.resume();
+  }
   player.play(songIndex);
 });
 pauseBtn.addEventListener('click', function() {
